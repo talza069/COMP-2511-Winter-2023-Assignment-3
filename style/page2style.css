@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+body {
+  background-color: #145429;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 10px);
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+ 
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+nav a.link:hover {
+  color: #2f5a38;
+}
+.link {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px 10px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+header {
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    height: 700px;
+    width: 100%;
+    background-color: #f1f1f1;
+ 
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  th, td {
+    border: 2px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #eee;
+  
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footy {
+    padding:50px 0;
+    margin:0 0 0 0;
+    padding: 0;
+    background-color:#000000;
+    color:#ffffff;
+}
+
+.footy ul {
+    margin-bottom:0;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.footy ul a {
+    color: #ffffff;
+    text-decoration:none;
+    opacity:0.8;
+    display: inline-block;
+}
+  
+.footy .social {
+    text-align:center;
+    padding-top: 20px;
+}
+
+  /* Small devices */
+  @media screen and (max-width: 590px) {
+    /* Set layout to single column with vertical menu */
+  
+    /* Move the logo to the center */
+  
+    #header {
+      width: 100%;
+      position: relative;
+     }
+  
+    .logo {
+      margin:  auto;
+      position: absolute;
+      left: 33%;
+    }
+    /* Align the menu to the far right */
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 20px 0px 0px 20px;
+    }
+    
+    .menu li {
+      display: block;
+      margin: 10px 0;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    /* Line everything up */
+  
+    /* Make everything centered */
+    body {
+      text-align: center;
+    }
+  
+    /* Add large margins on the sides */
+    .container {
+      margin: 0 50px;
+    }
+  
+    /* Display the boxes in a single column */
+    .box {
+      width: 100%;
+    }
+  }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-top: 5px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  input[type="reset"],
+  input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-container input[type="reset"] {
+    margin-right: 10px;
+  }
+  
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background-color: rgb(21, 65, 22);
+    color: white;
+    text-decoration: underline;
+  }
+  

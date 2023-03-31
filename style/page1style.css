@@ -1,0 +1,241 @@
+/* default devices  and 2nd is small screens */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+.circular-img {
+    border-radius: 70%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 60px;
+    float: left;
+    padding: 5%;
+  }
+
+  body {
+    background-color: #145429;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: calc(100% - 10px);
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-left: 20px;
+   
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+
+  nav a.link:hover {
+    color: #40de62;
+  }
+  .link {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  
+  header {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    height: 600px;
+    margin: 30px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+
+  .divider{
+    text-align: center;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+  .headertitle .banner-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .headertitle h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .headertitle p {
+    font-size: 18px;
+    margin: 20px 0 0;
+  }
+  
+  section {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+  .box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(21, 65, 22);
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+
+  .footy {
+    padding: 10px 0;
+    margin: 0;
+    height: 270px;
+    background-color: #1e1d1d;
+    color: #ffffff;
+  }
+  
+  .footy ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .footy ul a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+    display: inline-block;
+  }
+  
+  .footy .social {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+  .my-video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+  
+
+  
+  /* Small devices 2nd one  */
+@media screen and (max-width: 590px) {
+  /* Set layout to single column with vertical menu */
+
+  /* Move the logo to the center */
+
+  #header {
+    width: 60%;
+    position: relative;
+   }
+   .circular-img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 60px;
+    float: left;
+    padding: 5%;
+  }
+  .logo {
+    margin:  auto;
+    position: absolute;
+    left: 40%;
+  }
+  /* Align the menu to the far right */
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0px 0px 20px;
+  }
+  
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  /* Line everything up */
+
+  /* Make everything centered */
+  body {
+    text-align: center;
+  }
+
+  /* Add large margins on the sides */
+  .container {
+    margin: 0 50px;
+  }
+
+  /* Display the boxes in a single column */
+  .box {
+    width: 100%;
+  }
+}
